@@ -30,7 +30,7 @@ def main():
     ap.add_argument('path2', metavar='<file2>')
     options = ap.parse_args()
     xs = read_file(options.path1)
-    ys = read_file(options.path1)
+    ys = read_file(options.path2)
     for n, x, y in maxproduct(xs, ys, n=options.n, fn=mul):
         print(n, x, y)
 
