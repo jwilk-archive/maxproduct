@@ -11,7 +11,7 @@
    601930  Katarzyna
    585732  Małgorzata
    559412  Agnieszka
-   
+
    $ head -n 10 test/surnames.txt
    220217  Nowak
    131940  Kowalski
@@ -23,7 +23,7 @@
    87690   Kowalczyk
    85988   Zieliński
    84527   Szymański
-   
+
    $ maxproduct 10 test/forenames.txt test/surnames.txt
    245439774312 Anna Nowak
    165952448162 Maria Nowak
