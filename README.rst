@@ -25,15 +25,15 @@
    84527   Szymański
    
    $ maxproduct 10 test/forenames.txt test/surnames.txt
-   128988143844 Małgorzata Nowak
-   132555218810 Katarzyna Nowak
-   139323808522 Stanisław Nowak
-   146753489668 Krzysztof Nowak
-   147051879840 Anna Kowalski
-   149229169182 Piotr Nowak
-   149362400467 Andrzej Nowak
-   151776199004 Jan Nowak
-   165952448162 Maria Nowak
    245439774312 Anna Nowak
+   165952448162 Maria Nowak
+   151776199004 Jan Nowak
+   149362400467 Andrzej Nowak
+   149229169182 Piotr Nowak
+   147051879840 Anna Kowalski
+   146753489668 Krzysztof Nowak
+   139323808522 Stanisław Nowak
+   132555218810 Katarzyna Nowak
+   128988143844 Małgorzata Nowak
 
 .. vim:ts=3 sw=3 et

@@ -31,7 +31,7 @@ def main():
     options = ap.parse_args()
     xs = read_file(options.path1)
     ys = read_file(options.path2)
-    for n, x, y in maxproduct(xs, ys, n=options.n, fn=mul):
+    for n, x, y in maxproduct(xs, ys, n=options.n, fn=mul, reverse=True):
         print(n, x, y)
 
 if __name__ == '__main__':

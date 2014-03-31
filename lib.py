@@ -3,7 +3,7 @@
 import operator
 from heapq import heappush, heappushpop
 
-def maxproduct(xs, ys, *, n, fn=operator.mul):
+def maxproduct(xs, ys, *, n, fn=operator.mul, reverse=False):
     t = []
     for x in sorted(xs, reverse=True):
         for y in sorted(ys, reverse=True):
@@ -15,6 +15,6 @@ def maxproduct(xs, ys, *, n, fn=operator.mul):
                     heappushpop(t, xy)
                 else:
                     break
-    return sorted(t)
+    return sorted(t, reverse=reverse)
 
 # vim:ts=4 sw=4 et
