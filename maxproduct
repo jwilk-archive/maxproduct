@@ -1,0 +1,40 @@
+#!/usr/bin/python3
+
+import argparse
+
+from lib import maxproduct
+
+def read_file(path):
+    with open(path, 'rt', encoding='UTF-8') as file:
+        return list(_read_file(file))
+
+def _read_file(file):
+    for line in file:
+        try:
+            n, text = line.split(None, 1)
+        except ValueError:
+            n, text = line, ''
+        n = int(n)
+        text = text.rstrip()
+        yield n, text
+
+def mul(x, y):
+    [n1, s1] = x
+    [n2, s2] = y
+    return (n1 * n2, s1, s2)
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('n', metavar='<n>', type=int)
+    ap.add_argument('path1', metavar='<file1>')
+    ap.add_argument('path2', metavar='<file2>')
+    options = ap.parse_args()
+    xs = read_file(options.path1)
+    ys = read_file(options.path1)
+    for n, x, y in maxproduct(xs, ys, n=options.n, fn=mul):
+        print(n, x, y)
+
+if __name__ == '__main__':
+    main()
+
+# vim:ts=4 sw=4 et
