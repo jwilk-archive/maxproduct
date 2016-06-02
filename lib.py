@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Copyright © 2012, 2014 Jakub Wilk <jwilk@jwilk.net>
+# Copyright © 2012-2016 Jakub Wilk <jwilk@jwilk.net>
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the “Software”), to deal
@@ -25,8 +25,10 @@ from heapq import heappush, heappushpop
 
 def maxproduct(xs, ys, *, n, fn=operator.mul, reverse=False):
     t = []
-    for x in sorted(xs, reverse=True):
-        for y in sorted(ys, reverse=True):
+    xs = sorted(xs, reverse=True)
+    ys = sorted(ys, reverse=True)
+    for x in xs:
+        for y in ys:
             xy = fn(x, y)
             if len(t) < n:
                 heappush(t, xy)
