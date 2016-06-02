@@ -37,4 +37,4 @@ def maxproduct(xs, ys, *, n, fn=operator.mul, reverse=False):
                     break
     return sorted(t, reverse=reverse)
 
-# vim:ts=4 sw=4 et
+# vim:ts=4 sts=4 sw=4 et
