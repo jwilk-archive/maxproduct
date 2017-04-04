@@ -1,4 +1,4 @@
-::
+.. code:: console
 
    $ head -n 15 test/forenames.txt
    1114536	Anna
