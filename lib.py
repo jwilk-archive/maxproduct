@@ -1,4 +1,4 @@
-# Copyright © 2012-2016 Jakub Wilk <jwilk@jwilk.net>
+# Copyright © 2012-2017 Jakub Wilk <jwilk@jwilk.net>
 # SPDX-License-Identifier: MIT
 
 import operator
