@@ -18,11 +18,11 @@
    490542	Paweł
 
    $ head -n 5 t/surnames.txt
-   220217  Nowak
-   131940  Kowalski
-   104418  Wiśniewski
-   92945   Dąbrowski
-   89366   Lewandowski
+   220217	Nowak
+   131940	Kowalski
+   104418	Wiśniewski
+   92945	Dąbrowski
+   89366	Lewandowski
 
    $ maxproduct 15 t/forenames.txt t/surnames.txt
    245439774312 Anna Nowak
