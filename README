@@ -1,6 +1,6 @@
 .. code:: console
 
-   $ head -n 15 test/forenames.txt
+   $ head -n 15 t/forenames.txt
    1114536	Anna
    753586	Maria
    689212	Jan
@@ -17,14 +17,14 @@
    503983	Ewa
    490542	Paweł
 
-   $ head -n 5 test/surnames.txt
+   $ head -n 5 t/surnames.txt
    220217  Nowak
    131940  Kowalski
    104418  Wiśniewski
    92945   Dąbrowski
    89366   Lewandowski
 
-   $ maxproduct 15 test/forenames.txt test/surnames.txt
+   $ maxproduct 15 t/forenames.txt t/surnames.txt
    245439774312 Anna Nowak
    165952448162 Maria Nowak
    151776199004 Jan Nowak
